@@ -4,6 +4,7 @@ import random
 class Investment:
     _max_ROI = 2
     _min_ROI = 0
+    portofolio_ROI = []
 
     def __init__(self, amount, years):
         self.amount = int(amount)
@@ -13,6 +14,8 @@ class Investment:
         ROI = self.amount * \
             (random.randint(Investment._min_ROI, Investment._max_ROI) / 100) * self.years
         print(ROI)
+        Investment.portofolio_ROI.append(ROI)
+        print(Investment.portofolio_ROI)
 
     def __secret_Intel(self):
         print("if your ROI less than 2 percent/year, you are losing money to inflation ")
@@ -34,6 +37,8 @@ class Stock(Investment):
             (random.randint(int(self._min_ROI), int(
                 self._max_ROI)) / 100) * self.years
         print(ROI)
+        Investment.portofolio_ROI.append(ROI)
+        print(Investment.portofolio_ROI)
 
     def __secret_Intel(self):
         print(" 90 percent of traders fail to make money when trading the stock market")
@@ -55,6 +60,8 @@ class Options(Investment):
             (random.randint(int(self._min_ROI), int(
                 self._max_ROI)) / 100) * self.years
         print(ROI)
+        Investment.portofolio_ROI.append(ROI)
+        print(Investment.portofolio_ROI)
 
     def __secret_Intel(self):
         print("A call options means you are betting the stock will go up, a put option means you are betting the stock will go down")
@@ -76,6 +83,8 @@ class Crypto(Investment):
             (random.randint(int(self._min_ROI), int(
                 self._max_ROI)) / 100) * self.years
         print(ROI)
+        Investment.portofolio_ROI.append(ROI)
+        print(Investment.portofolio_ROI)
 
     def __secret_Intel(self):
         print("Bitcoin had an average annual return of 363.6%!!!")
@@ -86,17 +95,25 @@ class Crypto(Investment):
 
 US_bond = Investment(100, 1)
 US_bond.calculate_ROI()
+US_bond = Investment(100, 1)
+US_bond.calculate_ROI()
 US_bond.displaySecretIntel()
 
 
+AAPL = Stock(100, 1)
+AAPL.calculate_ROI()
 AAPL = Stock(100, 1)
 AAPL.calculate_ROI()
 AAPL.displaySecretIntel()
 
 TSLA_C_500_2021 = Options(100, 1)
 TSLA_C_500_2021.calculate_ROI()
+TSLA_C_500_2021 = Options(100, 1)
+TSLA_C_500_2021.calculate_ROI()
 TSLA_C_500_2021.displaySecretIntel()
 
+BTC = Crypto(100, 1)
+BTC.calculate_ROI()
 BTC = Crypto(100, 1)
 BTC.calculate_ROI()
 BTC.displaySecretIntel()

@@ -13,8 +13,8 @@ class Investment:
     def calculate_ROI(self):
         ROI = self.amount * \
             (random.randint(Investment._min_ROI, Investment._max_ROI) / 100) * self.years
-        print(ROI)
-        Investment.portofolio_ROI.append(ROI)
+        print(str(round(ROI, 2)))
+        Investment.portofolio_ROI.append(str(round(ROI, 2)))
         print(Investment.portofolio_ROI)
 
     def __secret_Intel(self):
@@ -36,8 +36,8 @@ class Stock(Investment):
         ROI = self.amount * \
             (random.randint(int(self._min_ROI), int(
                 self._max_ROI)) / 100) * self.years
-        print(ROI)
-        Investment.portofolio_ROI.append(ROI)
+        print(str(round(ROI, 2)))
+        Investment.portofolio_ROI.append(str(round(ROI, 2)))
         print(Investment.portofolio_ROI)
 
     def __secret_Intel(self):
@@ -59,8 +59,8 @@ class Options(Investment):
         ROI = self.amount * \
             (random.randint(int(self._min_ROI), int(
                 self._max_ROI)) / 100) * self.years
-        print(ROI)
-        Investment.portofolio_ROI.append(ROI)
+        print(str(round(ROI, 2)))
+        Investment.portofolio_ROI.append(str(round(ROI, 2)))
         print(Investment.portofolio_ROI)
 
     def __secret_Intel(self):
@@ -82,8 +82,8 @@ class Crypto(Investment):
         ROI = self.amount * \
             (random.randint(int(self._min_ROI), int(
                 self._max_ROI)) / 100) * self.years
-        print(ROI)
-        Investment.portofolio_ROI.append(ROI)
+        print(str(round(ROI, 2)))
+        Investment.portofolio_ROI.append(str(round(ROI, 2)))
         print(Investment.portofolio_ROI)
 
     def __secret_Intel(self):

@@ -95,25 +95,17 @@ class Crypto(Investment):
 
 US_bond = Investment(100, 1)
 US_bond.calculate_ROI()
-US_bond = Investment(100, 1)
-US_bond.calculate_ROI()
 US_bond.displaySecretIntel()
 
 
-AAPL = Stock(100, 1)
-AAPL.calculate_ROI()
 AAPL = Stock(100, 1)
 AAPL.calculate_ROI()
 AAPL.displaySecretIntel()
 
 TSLA_C_500_2021 = Options(100, 1)
 TSLA_C_500_2021.calculate_ROI()
-TSLA_C_500_2021 = Options(100, 1)
-TSLA_C_500_2021.calculate_ROI()
 TSLA_C_500_2021.displaySecretIntel()
 
-BTC = Crypto(100, 1)
-BTC.calculate_ROI()
 BTC = Crypto(100, 1)
 BTC.calculate_ROI()
 BTC.displaySecretIntel()
